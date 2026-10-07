@@ -3,64 +3,172 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>പൊതുപരീക്ഷ A++ Batch</title>
+<title>പൊതുപരീക്ഷ A++ BATCH</title>
 <style>
 :root{color-scheme:light dark;--bg:#f5f7f2;--surface:#fff;--text:#172018;--muted:#667064;--accent:#166534;--accent2:#22c55e;--gold:#d4a72c;--border:#e4e8e1}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Noto Sans Malayalam",sans-serif;background:var(--bg);color:var(--text)}
 #app{min-height:100vh;background:light-dark(#f5f7f2,#111511);}
 .hero{padding:34px 20px 28px;background:linear-gradient(145deg,#0f5132,#166534 58%,#0b3d25);color:white;text-align:center;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.16);border-radius:50%;right:-90px;top:-100px}.badge{display:inline-block;padding:7px 13px;border:1px solid rgba(255,255,255,.3);border-radius:999px;font-size:13px;margin-bottom:14px;background:rgba(255,255,255,.09)}h1{font-size:32px;line-height:1.15;margin:0 0 9px;font-weight:800}.sub{font-size:16px;opacity:.9;margin:0}.free{display:inline-block;margin-top:17px;background:#f5c842;color:#172018;padding:9px 16px;border-radius:999px;font-weight:800}
-.wrap{max-width:620px;margin:0 auto;padding:22px 16px 36px}.card{background:light-dark(#fff,#1a1e1a);border:1px solid light-dark(#e4e8e1,#303730);border-radius:20px;padding:20px;box-shadow:0 8px 28px rgba(0,0,0,.06);margin-bottom:15px}.card h2{font-size:20px;margin:0 0 8px}.intro{color:var(--muted);font-size:14px;line-height:1.65;margin:0 0 16px}.features{display:grid;grid-template-columns:1fr 1fr;gap:10px}.feature{padding:13px;border:1px solid var(--border);border-radius:14px;font-size:14px}.feature b{display:block;margin-bottom:4px}.hero-join{display:block;max-width:330px;margin:20px auto 0;padding:15px 18px;border-radius:14px;background:#fff;color:#166534;text-decoration:none;font-size:18px;font-weight:800;box-shadow:0 6px 18px rgba(0,0,0,.16)}.hero-join:active{transform:translateY(1px)}.join{display:block;text-decoration:none;background:#16803c;color:#fff;text-align:center;padding:16px;border-radius:14px;font-size:18px;font-weight:800;margin-top:12px;box-shadow:0 5px 14px rgba(22,128,60,.2)}.join:active{transform:translateY(1px)}.rules{display:grid;gap:9px;margin-top:16px}.rule{display:flex;gap:10px;align-items:flex-start;padding:12px;border-radius:13px;background:light-dark(#f3f8f3,#202820);border:1px solid light-dark(#e0e9e1,#344034)}.rule span{width:26px;height:26px;flex:none;border-radius:50%;background:#166534;color:#fff;display:grid;place-items:center;font-size:13px;font-weight:800}.rule p{margin:0;font-size:13px;line-height:1.5}.rule b{font-size:14px}.note{font-size:12px;color:var(--muted);text-align:center;margin:12px 0 0}.steps{display:grid;gap:12px}.step{display:flex;gap:12px;align-items:flex-start}.num{width:29px;height:29px;flex:none;border-radius:50%;background:#e9f5ed;color:#166534;display:grid;place-items:center;font-weight:800}.step p{margin:2px 0 0;font-size:14px;line-height:1.55}.contact{text-align:center}.contact p{color:var(--muted);font-size:14px}.footer{text-align:center;color:var(--muted);font-size:12px;padding:8px 0 4px}
+.wrap{max-width:620px;margin:0 auto;padding:22px 16px 36px}.card{background:light-dark(#fff,#1a1e1a);border:1px solid light-dark(#e4e8e1,#303730);border-radius:20px;padding:20px;box-shadow:0 8px 28px rgba(0,0,0,.06);margin-bottom:15px}.card h2{font-size:20px;margin:0 0 8px}.intro{color:var(--muted);font-size:14px;line-height:1.65;margin:0 0 16px}.features{display:grid;grid-template-columns:1fr 1fr;gap:10px}.feature{padding:13px;border:1px solid var(--border);border-radius:14px;font-size:14px}.feature b{display:block;margin-bottom:4px}.join{display:block;text-decoration:none;background:#16803c;color:#fff;text-align:center;padding:16px;border-radius:14px;font-size:18px;font-weight:800;margin-top:12px;box-shadow:0 5px 14px rgba(22,128,60,.2)}.join:active{transform:translateY(1px)}.contact{text-align:center}.contact p{color:var(--muted);font-size:14px}.footer{text-align:center;color:var(--muted);font-size:12px;padding:8px 0 4px}
 @media(max-width:430px){h1{font-size:28px}.features{grid-template-columns:1fr}.card{padding:17px}.wrap{padding-left:13px;padding-right:13px}}
-@media(prefers-color-scheme:dark){.hero{background:linear-gradient(145deg,#0b3824,#145c30 58%,#092a1b)}.feature{border-color:#303730}.num{background:#193a26;color:#8ee0a7}}
+@media(prefers-color-scheme:dark){.hero{background:linear-gradient(145deg,#0b3824,#145c30 58%,#092a1b)}.feature{border-color:#303730}}
 </style>
 </head>
+
 <body>
 <div id="app">
+
 <section class="hero">
   <div class="badge">📚 2026 പൊതുപരീക്ഷാ പരിശീലനം</div>
   <h1>പൊതുപരീക്ഷ A++ BATCH</h1>
   <p class="sub">മികച്ച വിജയം ലക്ഷ്യമാക്കി പ്രത്യേക പരിശീലനം</p>
   <span class="free">🎁 സൗജന്യ പരിശീലനം</span>
 </section>
+
 <main class="wrap">
+
   <section class="card join-card" id="join">
-    <h2>💚 WhatsApp Batch-ൽ ചേരാം</h2>
-    <a class="join" href=" https://chat.whatsapp.com/KhZQSVi2BSt3venI0pyVSJ" target="_blank" rel="noopener">Join WhatsApp Batch →</a>
-    <div class="steps">
-      <h3>എങ്ങനെ ചേരാം?</h3>
-      <div class="step"><span class="num">1</span><p><b>Join WhatsApp Batch</b> അമർത്തുക.</p></div>
-      <div class="step"><span class="num">2</span><p>WhatsApp തുറന്നാൽ <b>Join Group</b> അമർത്തുക.</p></div>
-      <div class="step"><span class="num">3</span><p>Group-ൽ ലഭിക്കുന്ന നിർദ്ദേശങ്ങൾ പിന്തുടരുക.</p></div>
+    <h2>📚 AP Syllabus</h2>
+    <p class="intro">പൊതു പരീക്ഷ ക്ലാസുകൾ</p>
+
+    <div class="class-group">
+      <h3>Class 5</h3>
+
+      <a class="join full"
+         href="javascript:void(0)"
+         aria-disabled="true">
+        Group 1 — Full
+      </a>
+
+      <a class="join"
+         href="https://chat.whatsapp.com/PASTE_CLASS_5_GROUP_2_LINK"
+         target="_blank"
+         rel="noopener">
+        Group 2 — Join WhatsApp →
+      </a>
     </div>
+
+    <div class="class-group">
+      <h3>Class 7</h3>
+
+      <a class="join full"
+         href="javascript:void(0)"
+         aria-disabled="true">
+        Group 1 — Full
+      </a>
+
+      <a class="join"
+         href="https://chat.whatsapp.com/PASTE_CLASS_7_GROUP_2_LINK"
+         target="_blank"
+         rel="noopener">
+        Group 2 — Join WhatsApp →
+      </a>
+    </div>
+
+    <div class="class-group">
+      <h3>Class 10</h3>
+
+      <a class="join"
+         href="https://chat.whatsapp.com/PASTE_CLASS_10_GROUP_1_LINK"
+         target="_blank"
+         rel="noopener">
+        Group 1 — Join WhatsApp →
+      </a>
+    </div>
+
+    <div class="class-group">
+      <h3>മറ്റ് ക്ലാസുകൾ</h3>
+
+      <a class="join"
+         href="https://chat.whatsapp.com/PASTE_OTHER_CLASSES_GROUP_LINK"
+         target="_blank"
+         rel="noopener">
+        Join WhatsApp Group →
+      </a>
+    </div>
+
   </section>
+
   <section class="card">
     <h2>🎯 ഈ ബാച്ചിൽ എന്തൊക്കെ?</h2>
-    <p class="intro">പൊതുപരീക്ഷയ്ക്ക് ആത്മവിശ്വാസത്തോടെ തയ്യാറെടുക്കാൻ ക്രമബദ്ധമായ പരിശീലനവും തുടർച്ചയായ പിന്തുണയും.</p>
+
+    <p class="intro">
+      പൊതുപരീക്ഷയ്ക്ക് ആത്മവിശ്വാസത്തോടെ തയ്യാറെടുക്കാൻ
+      ക്രമബദ്ധമായ പരിശീലനവും തുടർച്ചയായ പിന്തുണയും.
+    </p>
+
     <div class="features">
-      <div class="feature"><b>📖 പാഠവിശകലനം</b>പ്രധാന ഭാഗങ്ങൾ എളുപ്പത്തിൽ</div>
-      <div class="feature"><b>📝 തദ്രീബാത്തുകൾ</b>പരിശീലന ചോദ്യങ്ങൾ</div>
-      <div class="feature"><b>❓ ചോദ്യോത്തരങ്ങൾ</b>പരീക്ഷാ കേന്ദ്രീകൃത പഠനം</div>
-      <div class="feature"><b>📋 മോഡൽ പരീക്ഷകൾ</b>യഥാർത്ഥ പരീക്ഷാ പരിശീലനം</div>
-      <div class="feature"><b>🔁 റിപ്പീറ്റ് പഠനം</b>ഓർമ്മ ഉറപ്പാക്കാൻ</div>
-      <div class="feature"><b>🎯 ഫോളോ അപ്പ്</b>തുടർച്ചയായ പിന്തുണ</div>
+
+      <div class="feature">
+        <b>📖 പാഠവിശകലനം</b>
+        പ്രധാന ഭാഗങ്ങൾ എളുപ്പത്തിൽ
+      </div>
+
+      <div class="feature">
+        <b>📝 തദ്രീബാത്തുകൾ</b>
+        പരിശീലന ചോദ്യങ്ങൾ
+      </div>
+
+      <div class="feature">
+        <b>❓ ചോദ്യോത്തരങ്ങൾ</b>
+        പരീക്ഷാ കേന്ദ്രീകൃത പഠനം
+      </div>
+
+      <div class="feature">
+        <b>📋 മോഡൽ പരീക്ഷകൾ</b>
+        യഥാർത്ഥ പരീക്ഷാ പരിശീലനം
+      </div>
+
+      <div class="feature">
+        <b>🔁 റിപ്പീറ്റ് പഠനം</b>
+        ഓർമ്മ ഉറപ്പാക്കാൻ
+      </div>
+
+      <div class="feature">
+        <b>🎯 ഫോളോ അപ്പ്</b>
+        തുടർച്ചയായ പിന്തുണ
+      </div>
+
     </div>
   </section>
+
   <section class="card contact">
     <h2>🌟 നിങ്ങളുടെ വിജയത്തിനായി</h2>
     <p>പഠിക്കാം • പരിശീലിക്കാം • മികച്ച വിജയം നേടാം</p>
   </section>
+
   <section class="card share">
+
     <p>📢 ഈ അവസരം ഒരു വിദ്യാർത്ഥിയും അറിയാതെ പോകരുതേ! ❤️</p>
+
     <p>📲 നിങ്ങളുടെ WhatsApp Status-ലും Groups-ലും Share ചെയ്യൂ.</p>
+
     <p>🎁 ഇത്രയും മികച്ച ഒരു സൗജന്യ പരിശീലന അവസരം എല്ലാവരിലേക്കും എത്തിക്കാം!</p>
-    <p>👨‍👩‍👧‍👦 നിങ്ങളുടെ കുടുംബത്തിലുള്ള വിദ്യാർത്ഥികൾക്കും<br>👥 ബന്ധുക്കൾക്കും സുഹൃത്തുക്കൾക്കും<br>📚 പഠിക്കുന്ന എല്ലാ വിദ്യാർത്ഥികൾക്കും</p>
+
+    <p>
+      👨‍👩‍👧‍👦 നിങ്ങളുടെ കുടുംബത്തിലുള്ള വിദ്യാർത്ഥികൾക്കും<br>
+      👥 ബന്ധുക്കൾക്കും സുഹൃത്തുക്കൾക്കും<br>
+      📚 പഠിക്കുന്ന എല്ലാ വിദ്യാർത്ഥികൾക്കും
+    </p>
+
     <p>🌟 ഒരു Share — ഒരു വിദ്യാർത്ഥിക്ക് നല്ലൊരു അവസരം! 🌟</p>
-    <p><b>വാട്സാപ്പിൽ മാത്രം ബന്ധപ്പെടുക Ph:62822 32722</b></p>
+
+    <p>
+      <b>വാട്സാപ്പിൽ മാത്രം ബന്ധപ്പെടുക Ph:62822 32722</b>
+    </p>
+
     <p>👉 ഈ പോസ്റ്റർ ഒന്ന് Share ചെയ്യണേ!</p>
+
     <p>ആർക്കും ഈ അവസരം നഷ്ടപ്പെടാതിരിക്കട്ടെ! ❤️</p>
+
   </section>
-  <div class="footer">പൊതുപരീക്ഷ A++ BATCH • സൗജന്യ പരിശീലനം</div>
+
+  <div class="footer">
+    പൊതുപരീക്ഷ A++ BATCH • സൗജന്യ പരിശീലനം
+  </div>
+
 </main>
+
 </div>
 </body>
 </html>
